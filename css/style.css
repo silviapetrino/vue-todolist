@@ -19,6 +19,10 @@ body{
   font-size: .7rem;
 }
 
+.insert-task p {
+  color: red;
+}
+
 .task-container {
   background-color: #F6F7F7;
   width: 70%;

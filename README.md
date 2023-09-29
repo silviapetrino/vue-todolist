@@ -15,7 +15,8 @@
 
 // 7. aggiungo un method che verrà attivato al click del bottone 
 
-
+// 8. aggiungo un controllo sulla parola inserita
+________________
 
 Descrizione:
 Rifare l’esercizio della to do list fatto in classe.

@@ -15,6 +15,8 @@
 
 // 7. aggiungo un method che verrà attivato al click del bottone 
 
+// 8. aggiungo un controllo sulla parola inserita
+
 
 
 const { createApp } = Vue;
@@ -46,17 +48,24 @@ createApp ({
     newTask : {
       text: " ",
       done: false
-    }
+    },
 
+    error: false,
+    message: "Inserisci almeno 5 lettere"
   }
  },
 
  methods: {
 
   addtask() {
-    this.tasks.unshift(this.newTask)
+    if (this.newTask.text.length <= 5) {
+      this.error = true 
+      this.message
+    }else {
+      this.error = false
+      this.tasks.unshift(this.newTask)
+    }
   }
-
 
 
  }
