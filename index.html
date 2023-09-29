@@ -21,7 +21,7 @@
   </div>
 
   <div class="insert-task text-center">
-    <input v-model.trim="newTask.text" type="text" placeholder="New task" class="rounded-2 py-1 px-1">
+    <input  @keyup.enter="addtask" v-model.trim="newTask.text" type="text" placeholder="New task" class="rounded-2 py-1 px-1">
     <button @click="addtask" class="rounded ms-2 py-1">Aggiungi</button>
     <p class="my-2">{{message}}</p>
   </div>
@@ -32,7 +32,7 @@
 
       <li v-for="(task, index) in tasks" class="p-3 d-flex justify-content-between">
         <span  @click="task.done = !task.done" :class="{'done': task.done}">{{ task.text }}</span>
-        <i @click="removeTask" class="fa-solid fa-trash-can"></i>
+        <i @click="removeTask(index)" class="fa-solid fa-trash-can"></i>
       </li>
 
     </ul>
