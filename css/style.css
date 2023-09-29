@@ -35,3 +35,7 @@ body{
   background-color: #a5a8a8;
   color: white;
 }
+
+.task.done  {
+  text-decoration: line-through;
+}
