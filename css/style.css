@@ -1,3 +1,20 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+.debug {
+  border: 1px solid black;
+}
+
+#logo img {
+  width: 250px;
+}
+
+.insert-task input {
+  font-size: .7rem;
+  width: 350px;
+}
+
+.insert-task button {
+  font-size: .7rem;
+}
