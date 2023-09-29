@@ -26,13 +26,13 @@ createApp ({
     ],
 
       newTask : {
-      text: " ",
+      text: null,
       done: false
       },
 
       error: false,
-      
-      message: " ",
+
+      message: null,
 
 
   }
@@ -45,8 +45,8 @@ createApp ({
       this.error = true
       this.message = "inserisci almeno 5 lettere"
       setInterval( () => {
-        this.message = " "
-      }, 2000)
+        this.message = null
+      }, 3000)
       
     }else {
       this.error = false
@@ -61,7 +61,7 @@ createApp ({
   undoneTask() {
     this.message = "Errore! Devi ancora svolgere la task.";
     setInterval( () => {
-      this.message = " "
+      this.message = null
     }, 2000)
   } 
 
