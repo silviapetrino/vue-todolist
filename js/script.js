@@ -26,13 +26,13 @@ createApp ({
     ],
 
       newTask : {
-      text: null,
+      text: " ",
       done: false
       },
 
       error: false,
 
-      message: null,
+      message: " ",
 
 
   }
@@ -41,12 +41,12 @@ createApp ({
  methods: {
 
   addtask() {
-    if (this.newTask.text.length <= 5) {
+    if (this.newTask.text.length <= 5 || this.newTask.text.length === 0) {
       this.error = true
       this.message = "inserisci almeno 5 lettere"
       setInterval( () => {
         this.message = null
-      }, 3000)
+      }, 2000)
       
     }else {
       this.error = false
