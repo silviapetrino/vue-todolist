@@ -28,7 +28,7 @@
 
   <div class="task-container rounded py-1">
 
-    <ul v-if="tasks.length > 0" class="list-unstyled rounded">
+    <ul v-if="tasks.length > 0" class="list-unstyled rounded-2">
 
       <li v-for="(task, index) in tasks" class="p-3 d-flex justify-content-between">
         <span  @click="task.done = !task.done" :class="{'done': task.done}">{{ task.text }}</span>
