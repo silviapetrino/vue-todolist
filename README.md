@@ -17,7 +17,9 @@ Istructions:
 8.   Add a check on the entered word;
 
 9.   Toggle the 'done' class if the task has been completed;
+
 10.   Add a method that removes the element from the list;
+
 11.   Add a condition to the button click.
 
 ________________
