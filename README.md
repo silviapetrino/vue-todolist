@@ -1,52 +1,49 @@
+Istructions:
 
-// Istruzioni:
+1. Create a static markup in html/css;
 
-// 1. Creare un markup statico in html/css;
+2.    Initialize Vue;
 
-// 2. Inizializzare Vue;
+3.   Create an array of objects representing the tasks;
 
-// 3. creare un array di oggetti che rappresentano le tasks;
+4.    Print the elements in the loop on the page if they exist;
 
-// 4. stampo in pagina gli elementi del ciclo a condizione vi siano 
+5.    Otherwise, print the message "there are no tasks";
 
-// 5. altrimenti stampo messaggio "non ci sono task";
+6.   Use v-model to monitor the value of an input;
 
-// 6. utilizzo il v-model per monitorare il value di un input;
+7.    Add a method that will be activated on the button click;
 
-// 7. aggiungo un method che verrà attivato al click del bottone 
+8.   Add a check on the entered word;
 
-// 8. aggiungo un controllo sulla parola inserita;
-
-// 9. toggle della classe done se la task è stata effettuata;
-
-// 10. method che toglie l'elemento dalla lista
+9.   Toggle the 'done' class if the task has been completed;
+10.   Add a method that removes the element from the list;
+11.   Add a condition to the button click.
 
 ________________
 
-Descrizione:
-Rifare l’esercizio della to do list fatto in classe.
-Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
-- text, una stringa che indica il testo del todo
 
-- done, un booleano (true/false) che indica se il todo è stato fatto oppure no
+Description:
+
+Redo the to-do list exercise done in class. This time, each to-do will be an object, consisting of two properties:
+
+-text, a string indicating the to-do text;
+
+-done, a boolean (true/false) indicating whether the to-do has been done or not.
 
 MILESTONE 1
-Stampare all’interno di una lista HTML un item per ogni todo.
-Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+Print inside an HTML list an item for each to-do. If the done property is true, display the to-do text with a strikethrough.
 
 MILESTONE 2
-Visualizzare a fianco ad ogni item ha una “x”: cliccando su di essa, il todo viene rimosso dalla lista.
+Display next to each item an "x": clicking on it will remove the to-do from the list.
 
 MILESTONE 3
-Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
-Oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
+Set up a text input field and an "add" button: clicking on the button will read the entered text and use it to create a new to-do, which is then added to the list of existing to-dos. In addition to clicking the button, also intercept the ENTER key to add the to-do to the list.
 
 Bonus:
-1- se il todo ha meno di 5 caratteri esporre un messaggio di errore
+1- If the to-do has fewer than 5 characters, display an error message.
 
-2- cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+2- Clicking on the item's text, reverse the value of the done property of the corresponding to-do (if done was false, set it to true and vice versa).
 
-3- eliminare il todo solo se è stato svolto, altrimenti esporre un messaggio di errore
-____________________
-
+3- Delete the to-do only if it has been completed, otherwise display an error message.
