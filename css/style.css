@@ -40,6 +40,6 @@ body{
   color: white;
 }
 
-.task.done  {
+.done  {
   text-decoration: line-through;
 }

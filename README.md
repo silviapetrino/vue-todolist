@@ -15,7 +15,12 @@
 
 // 7. aggiungo un method che verrà attivato al click del bottone 
 
-// 8. aggiungo un controllo sulla parola inserita
+// 8. aggiungo un controllo sulla parola inserita;
+
+// 9. toggle della classe done se la task è stata effettuata;
+
+// 10. method che toglie l'elemento dalla lista
+
 ________________
 
 Descrizione:

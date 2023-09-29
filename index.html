@@ -26,13 +26,13 @@
     <p class="my-2">{{message}}</p>
   </div>
 
-  <div class="task-container rounded py-2">
+  <div class="task-container rounded py-1">
 
     <ul v-if="tasks.length > 0" class="list-unstyled rounded">
 
-      <li v-for="(task, index) in tasks" class="task p-3 d-flex justify-content-between">
-        <span>{{ task.text }}</span>
-        <i class="fa-solid fa-trash-can"></i>
+      <li v-for="(task, index) in tasks" class="p-3 d-flex justify-content-between">
+        <span  @click="task.done = !task.done" :class="{'done': task.done}">{{ task.text }}</span>
+        <i @click="removeTask" class="fa-solid fa-trash-can"></i>
       </li>
 
     </ul>
