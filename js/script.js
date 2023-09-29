@@ -46,7 +46,7 @@ createApp ({
       this.message = "inserisci almeno 5 lettere"
       setInterval( () => {
         this.message = null
-      }, 2000)
+      }, 3000)
       
     }else {
       this.error = false
