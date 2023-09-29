@@ -41,11 +41,23 @@ createApp ({
         done: false
       }
 
-    ]
+    ],
+
+    newTask : {
+      text: " ",
+      done: false
+    }
+
   }
  },
 
  methods: {
+
+  addtask() {
+    this.tasks.unshift(this.newTask)
+  }
+
+
 
  }
 

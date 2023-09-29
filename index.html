@@ -21,8 +21,8 @@
   </div>
 
   <div class="insert-task text-center">
-    <input v-model="tasks.text" type="text" placeholder="New task" class="rounded-2 py-1 px-1">
-    <button @click="" class="rounded ms-2 py-1">Aggiungi</button>
+    <input v-model.trim="newTask.text" type="text" placeholder="New task" class="rounded-2 py-1 px-1">
+    <button @click="addtask" class="rounded ms-2 py-1">Aggiungi</button>
   </div>
 
   <div class="task-container rounded py-2">
