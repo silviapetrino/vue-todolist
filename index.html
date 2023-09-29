@@ -21,19 +21,22 @@
   </div>
 
   <div class="insert-task text-center">
-    <input type="text" placeholder="New task" class="rounded-2 py-1 px-1">
-    <button class="rounded ms-2 py-1">Aggiungi</button>
+    <input v-model="tasks.text" type="text" placeholder="New task" class="rounded-2 py-1 px-1">
+    <button @click="" class="rounded ms-2 py-1">Aggiungi</button>
   </div>
 
   <div class="task-container rounded py-2">
 
-    <ul class="list-unstyled rounded">
-      <li v-for="task in tasks" class="p-3 d-flex justify-content-between">
+    <ul v-if="tasks.length > 0" class="list-unstyled rounded">
+
+      <li v-for="(task, index) in tasks" class="task p-3 d-flex justify-content-between">
         <span>{{ task.text }}</span>
         <i class="fa-solid fa-trash-can"></i>
       </li>
 
     </ul>
+
+    <h5 v-else="">Non ci sono tasks</h5>
  
   </div>
 
