@@ -32,7 +32,8 @@
 
       <li v-for="(task, index) in tasks" class="p-3 d-flex justify-content-between">
         <span  @click="task.done = !task.done" :class="{'done': task.done}">{{ task.text }}</span>
-        <i @click="removeTask(index)" class="fa-solid fa-trash-can"></i>
+        <i v-if="task.done" @click="removeTask(index)" class="fa-solid fa-trash-can"></i>
+        <i v-else  @click="undoneTask()" class="fa-solid fa-trash-can"></i>
       </li>
 
     </ul>
