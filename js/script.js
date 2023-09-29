@@ -63,8 +63,12 @@ createApp ({
 
   addtask() {
     if (this.newTask.text.length <= 5) {
-      this.error = true 
+      this.error = true
       this.message = "inserisci almeno 5 lettere"
+      setInterval( () => {
+        this.message = " "
+      }, 3000)
+      
     }else {
       this.error = false
       this.tasks.unshift(this.newTask)
