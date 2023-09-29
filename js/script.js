@@ -51,7 +51,7 @@ createApp ({
     },
 
     error: false,
-    message: "Inserisci almeno 5 lettere"
+    message: " "
   }
  },
 
@@ -60,7 +60,7 @@ createApp ({
   addtask() {
     if (this.newTask.text.length <= 5) {
       this.error = true 
-      this.message
+      this.message = "inserisci almeno 5 lettere"
     }else {
       this.error = false
       this.tasks.unshift(this.newTask)
